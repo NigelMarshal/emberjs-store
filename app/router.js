@@ -10,5 +10,8 @@ Router.map(function () {
   this.route('clothes', function () {
     this.route('t-shirt');
   });
+  //Dynamic ID for unique items
   this.route('item', { path: '/item/:item_id' });
+  //404
+  this.route('not-found', { path: '/*path' });
 });
